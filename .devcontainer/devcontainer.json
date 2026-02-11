@@ -1,0 +1,18 @@
+{
+  "name": "Phoenix-Lend-Environment",
+  "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-boot-dashboard",
+        "vscjava.vscode-spring-initializr",
+        "redhat.vscode-xml"
+      ]
+    }
+  },
+  "postCreateCommand": "mvn clean install"
+}
